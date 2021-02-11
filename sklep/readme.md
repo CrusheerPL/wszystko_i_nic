@@ -1,4 +1,4 @@
-*bo kiedy marzy nam się wino to się sklep nam zamyykaaaaaa...*
+*bo kiedy marzy nam się wino to się nam sklep zamyykaaaaaa...*
 
 Sklep do mapy do FS 19
 
