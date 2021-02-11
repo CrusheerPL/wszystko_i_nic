@@ -1,3 +1,5 @@
+*bo kiedy marzy nam się wino to się sklep nam zamyykaaaaaa...*
+
 Sklep do mapy do FS 19
 
 Instrukcja instalacji dla opornych:
