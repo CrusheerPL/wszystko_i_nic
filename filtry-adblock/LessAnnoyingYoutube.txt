@@ -18,6 +18,8 @@ i.ytimg.com/an_webp/*/mqdefault_6s.webp
 youtube.com##ytd-compact-video-renderer:has(span:has-text(/Polecane dla Ciebie/))
 ! ukrywanie polecanych na stronie wyników
 youtube.com##ytd-shelf-renderer:has(span:has-text(/Nowości dla Ciebie/))
+youtube.com##ytd-shelf-renderer:has(span:has-text(/Dla Ciebie/))
+youtube.com##ytd-shelf-renderer:has(span:has-text(/Poprzednio oglądane/))
 youtube.com##ytd-shelf-renderer:has(span:has-text(/Inni oglądali też/))
 ! sekcja "Muzyka" w opisie filmu
 youtube.com##ytd-video-description-music-section-renderer
