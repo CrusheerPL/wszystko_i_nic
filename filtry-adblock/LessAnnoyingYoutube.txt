@@ -23,6 +23,8 @@ youtube.com##ytd-shelf-renderer:has(span:has-text(/Poprzednio oglądane/))
 youtube.com##ytd-shelf-renderer:has(span:has-text(/Inni oglądali też/))
 ! sekcja "Muzyka" w opisie filmu
 youtube.com##ytd-video-description-music-section-renderer
+! embed
+youtube.com##div[class="ytp-pause-overlay-container"]
 
 ! nie pamiętam od czego to ale niech będzie
 youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
