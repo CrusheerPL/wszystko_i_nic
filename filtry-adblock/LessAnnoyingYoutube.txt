@@ -25,6 +25,7 @@ youtube.com##ytd-shelf-renderer:has(span:has-text(/Inni oglądali też/))
 youtube.com##ytd-video-description-music-section-renderer
 ! embed
 youtube.com##div[class="ytp-pause-overlay-container"]
-
+! "Obejrzyj w YouTube"
+youtube.com##div[id="offer-module"]
 ! nie pamiętam od czego to ale niech będzie
 youtube.com##ytd-reel-shelf-renderer.ytd-item-section-renderer.style-scope
