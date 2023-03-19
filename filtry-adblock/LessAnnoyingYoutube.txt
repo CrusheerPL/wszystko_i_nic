@@ -24,6 +24,8 @@ youtube.com##ytd-shelf-renderer:has(span:has-text(/Inni oglądali też/))
 youtube.com##ytd-shelf-renderer:has(span:has-text(/Nowe kanały dla Ciebie/))
 ! sekcja "Muzyka" w opisie filmu
 youtube.com##ytd-video-description-music-section-renderer
+! "zaproponowane przez" w opisie filmu
+youtube.com##div[id="always-shown"]
 ! embed
 youtube.com##div[class="ytp-pause-overlay-container"]
 ! "Obejrzyj w YouTube"
