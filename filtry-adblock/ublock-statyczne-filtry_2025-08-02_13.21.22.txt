@@ -1,0 +1,94 @@
+wykop.pl##div[class*="closableContainerpopup_register"]
+
+google.*##.TXwUJf
+google.*##.qrtJgd
+
+aliexpress.com##div[exp_page_area="recommended_for_you"]
+
+aliexpress.com##a[class*="manhattan--container"]:has(span[class*="manhattan--ad"])
+
+wykop.pl##section[id*="link"]:has(li[class="recommend-label"])
+
+rmf24.pl##^script:has-text(window.onpopstate)
+!#if !cap_html_filtering
+rmf24.pl##+js(acs, window.onpopstate)
+!#endif
+
+web.archive.org##div[id="donato"]
+
+! 2023-11-25 https://www.partitionwizard.com
+*pw-mcafee.gif$domain=www.partitionwizard.com,image
+
+polsatnews.pl/templates/pnews2018/build/js/Refresher.*.js
+
+! wp.pl
+
+!##iframe[src*="accounts.google.com"]
+accounts.google.com/gsi/client^$third-party
+
+
+facebook.com##div.x1lliihq:has(span:has-text(Proponowana dla Ciebie))
+
+youtube.com##+js(set,yt.config_.EXPERIMENT_FLAGS.kevlar_watch_grid, false)
+
+apkmirror.com#@#.listWidget > div[class="appRow"]
+
+youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 6 !important;)
+
+www.youtube.com#@#+js(trusted-rpnt, script, (function serverContract(), "YOUTUBE_PREMIUM_LOGO"!==ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType&&(location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/")||document.addEventListener("DOMContentLoaded"\,(function(){const t=()=>{const t=document.getElementById("movie_player");if(!t)return;if(!t.getStatsForNerds?.()?.debug_info?.startsWith?.("SSAP\, AD"))return;const e=t.getProgressState?.();e&&e.duration>0&&(e.loaded<e.duration||e.duration-e.current>1)&&t.seekTo?.(e.duration)};t()\,new MutationObserver((()=>{t()})).observe(document\,{childList:!0\,subtree:!0})})));(function serverContract(), sedCount, 1)
+
+www.youtube.com##+js(trusted-rpnt, script, (function serverContract(), '(()=>{if(ytInitialData?.topbar?.desktopTopbarRenderer?.logo?.topbarLogoRenderer?.iconImage?.iconType==="YOUTUBE_PREMIUM_LOGO"){return}if(location.href.startsWith("https://www.youtube.com/tv#/")||location.href.startsWith("https://www.youtube.com/embed/")||location.href.startsWith("https://www.youtube.com/subscribe_embed/")){return}document.addEventListener("DOMContentLoaded",(function(){const skipAd=()=>{const videoPlayer=document.getElementById("movie_player");if(!videoPlayer){return}const stats=videoPlayer.getStatsForNerds?.();if(!stats)return;console.log("[uBO - debug]",JSON.stringify(stats));const progress=videoPlayer.getProgressState?.();if(!progress)return;console.log("[uBO - progress]",JSON.stringify(progress));if(!stats.debug_info?.startsWith?.("SSAP, AD")){if(progress.current>1)return;if(!stats.codecs||stats.includes("undefined")||!stats.debug_info)return;const debugT=stats.debug_info.split("t:")[1].split(" ")[0];if(debugT==="0.00")return;if(stats.network_activity_samples&&stats.network_activity_samples.length>0&&Math.max(...stats.network_activity_samples)===0&&stats.buffer_health_samples&&stats.buffer_health_samples.length>1&&Math.max(...stats.buffer_health_samples)===0){videoPlayer.seekTo(progress.current+.1);console.log("[uBO - stats]",stats)}return}if(progress&&progress.duration>0){if(progress.loaded<progress.duration||progress.duration-progress.current>1){videoPlayer.seekTo?.(progress.duration+.1)}}};skipAd();const observer=new MutationObserver((()=>{skipAd()}));observer.observe(document,{childList:true,subtree:true})}))})();(function serverContract()', sedCount, 1)
+
+youtube.com##yt-lockup-view-model
+youtube.com##.translate-button
+
+facebook.com###splash-screen
+
+ebay.com##li[class*="__item-card"]:has(span:has-text(Sponsored))
+
+*loading-big.gif
+
+youtube.com##div#expandable-metadata
+!youtube.com##ytd-channel-renderer
+
+! praca.gov.pl##.cdk-overlay-container
+
+! praca.gov.pl##+js(aopr, ngAfterViewInit)
+
+! oferty.praca.gov.pl##+js(set-cookie, 'mobileAppDialogVisited', true, '/portal')
+! oferty.praca.gov.pl##.epraca-dialog-wrapper
+! oferty.praca.gov.pl##.cdk-overlay-backdrop
+
+##div.cookie-wrapper
+
+mediaexpert.pl##div[id*="LastSeen"]
+mediaexpert.pl##div[id*="SelectedForYou"]
+
+
+
+elektroda.pl##div.the-forum > div.top-post
+elektroda.pl##div.sponsored-in-category
+elektroda.pl##a.postlink[href*="/rtvforum/dsa.php"]
+elektroda.pl##div.the-forum.the-discussion > section > div:style(min-height: 0 !important)
+elektroda.pl##div.topbar-wrap > section.sec-b a[href*="/rtvforum/dsa.php"]
+
+poradnikprzedsiebiorcy.pl##div#barContainer
+poradnikprzedsiebiorcy.pl##.banner-expandable
+
+!allegro.pl##div[data-box-name="infinite-feed.wrapper"]
+
+! 14 maj 2025 https://www.ifirma.pl
+www.ifirma.pl##.sgpb-popup-overlay
+
+kadromierz.pl##.modal
+
+! 9 lip 2025 https://www.streamsoft.pl
+www.streamsoft.pl##.cookie-container-overlay
+
+! zmienić "category" na "verticals"
+! allegro.pl##div[data-box-name="new.error"] > div > div > div[data-box-name="category"]
+
+google.com##.active-account-dialog
+
+youtube.com##.ytp-chapter-container
+youtube.com##.ytd-single-option-survey-renderer
